@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="mycss.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="header">
+<h1>台灣各地天氣預報</h1>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-6">
+      <!-- Large button group -->
+      <div class="btn-group">
+        <button id="barTitle" class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+          台北市 <span class="caret"></span>
+        </button>
+        <ul id="dropdown" class="dropdown-menu" role="menu">
+</li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">台北市</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">新北市</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">台中市</a></li>
+        </ul>
+      </div>
+      <div><span class="temperature"></span></div>
+    </div>
+    <div class="col-xs-6">
+      <canvas id="today" width="100" height="100"></canvas>
+      <div class="condition">
+          <span class="date" id="day0date"></span>
+          <span id="weatherCondition"></span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Forecast</div>
+
+            <!-- Table -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th id="day1date"></th>
+                  <th id="day2date"></th>
+                  <th id="day3date"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id = "day1forecastTemp"></td>
+                  <td id = "day2forecastTemp"></td>
+                  <td id = "day3forecastTemp"></td>
+                </tr>
+                <tr>
+                  <td><canvas id="day1pic" width="64" height="64"></canvas></td>
+                  <td><canvas id="day2pic" width="64" height="64"></canvas></td>
+                  <td><canvas id="day3pic" width="64" height="64"></canvas></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+  </div>
+  
+</div>
+<div class="footer">
+</div>
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<script src="http://darkskyapp.github.io/skycons/skycons.js"></script>
+<script src="myapp.js"></script>
+</body>
+</html>

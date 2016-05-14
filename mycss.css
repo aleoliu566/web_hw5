@@ -1,0 +1,27 @@
+
+.container-fluid{
+  margin-top:10px;
+}
+.date{
+  font-weight: bold;
+}
+.temperature{
+  font-size:5em;
+}
+
+.header{
+	background-color: #0d3d69;
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+	margin-bottom: 2%;
+	color:white;
+	text-align: center;
+}
+.footer{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border-bottom: 40px solid #0d3d69;
+	bottom: 0;
+}
