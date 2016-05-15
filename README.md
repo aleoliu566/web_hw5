@@ -8,4 +8,4 @@
 - json
 - Yahoo Weather API
 - jQuery ( .each() )
-- JavaScript
+- JavaScript 
